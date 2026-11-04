@@ -1,0 +1,39 @@
+@import "tailwindcss";
+/* inter-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/playfair-display-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/*
+Cette ligne importe tout tailwind.
+C'est le reset (aussi appelé préflight)
+*/
+
+@import "tailwindcss";
+
+/*
+Le theme :
+variable crée automatiquement les classes
+*/
+@theme {
+    --color-creme: #FBF6F0;
+    --color-framboise: #B83B5E;
+    --color-bordeaux: #7A2840;
+    --color-sauge: #4E6650;
+    --color-petale: #F6E3E3;
+    --color-encre: #2B2024;
+    --color-blanc: #fffff;
+    --font-titre: 'Playfair Display';
+    --font-texte: 'Inter';
+}
