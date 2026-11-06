@@ -43,24 +43,201 @@ shadow-lg -> ombre
 md -> media query
 -->
 	<main>
-		<header class="bg-creme">
-			<div class="p-4">
-				<div class="flex justify-between">
-					<a class="flex  items-center ">
-						<img src="img/logo-roussel.svg" alt="" class="font-titre">
-						<p class="font-titre text-bordeaux rounded-2xl">Fleurs Roussel</p>
-					</a>
-					<button class="bg-framboise px-5 py-2">Commander</button>
-				</div>
-
-					<nav class="flex items-center text-sm justify-between gap-9">
-						<p>Bouquets</p>
-						<p>Ateliers</p>
-						<p>Livraison</p>
-						<p>Contact</p>
-					</nav>
+		<header class="bg-creme p-4 md:px-44 md:">
+			<div class="flex flex-wrap items-center justify-between md:flex-nowrap">
+				<a class="flex items-center gap-2">
+					<img src="img/logo-roussel.svg" alt="">
+					<p class="font-titre font-bold text-bordeaux text-2xl">Fleurs Roussel</p>
+				</a>
+				<button class="bg-framboise rounded-full text-blanc px-5 py-2 text-white font-semibold md:order-last">Commander</button>
+				<nav class="mt-4 flex w-full text-sm font-medium justify-between text-encre md:mt-0 md:w-auto md:gap-8">
+					<a href="#">Bouquets</a>
+					<a href="#">Ateliers</a>
+					<a href="#">Livraison</a>
+					<a href="#">Contact</a>
+				</nav>
 			</div>
 		</header>
+		<section class="bg-creme px-4     md:flex md:px-44 md:py-20 md:justify-between md:items-center">
+			<div class="md:max-w-131 md:gap-4">
+				<p class="pb-4 text-sauge text-xs uppercase">
+					Artisan fleuriste à blois depuis 1998
+				</p>
+				<h1 class="font-titre text-4xl font-bold pb-6 md:text-6xl">
+					Des fleurs de saison, composées à la main
+				</h1>
+				<p class="text-encre text-lg pb-8 md:pb-10">
+					Bouquets du marché, roses anciennes et compositions de champêtres : chaque semaine, Madame Roussel choisit les plus belles fleurs des producteurs de la région.
+				</p>
+				<nav class="flex flex-col gap-4 pb-10 md:flex-row">
+					<a href="#" class="bg-framboise font-semibold text-blanc text-center rounded-full py-3 md:px-6 md:py-3">
+						Voir les bouquets
+					</a>
+					<a href="#" class="border-2 border-framboise font-semibold text-framboise text-center rounded-full py-3 md:px-6 md:py-3">
+						Nos ateliers
+					</a>
+				</nav>
+			</div>
+			<img src="img/bouquet-vase.svg" alt="" class="rounded-4xl md:w-131">
+		</section>
+		<section class="px-4 py-16 md:px-44 md:py-20">
+			<h2 class="text-3xl text-encre font-titre font-bold pb-4 md:text-4xl">
+				Les bouquets de la semaine
+			</h2>
+			<p class="text-base text-encre pb-10 md:max-w-165">
+				Trois compositions renouvelées chaque lundi, en taille moyenne. Livraison possible le jour même à Blois.
+			</p>
+			<div class="flex flex-col gap-y-8 md:flex-row  md:gap-8">
+				<article class="overflow-hidden rounded-xl bg-creme md:w-85">
+					<img src="img/bouquet-marche.svg" alt="" class="">
+					<div class="p-6">
+						<h3 class="font-titre font-bold text-xl pb-2">
+							Bouquet du marché
+						</h3>
+						<p class="text-sm pb-8">
+							Renoncules, marguerites et brins de lavande, au gré des arrivages.
+						</p>
+						<div class="flex items-center justify-between">
+							<p class="font-semibold text-bordeaux text-lg">
+								35€
+							</p>
+							<button class=" font-semibold text-base text-framboise">
+								Commander
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="overflow-hidden rounded-xl bg-creme md:w-85">
+					<img src="img/bouquet-roses.svg" alt="">
+					<div class="p-6">
+						<h3 class="font-titre font-bold text-xl pb-2">
+							Roses anciennes
+						</h3>
+						<p class="text-sm pb-8">
+							Roses parfumées d'un rosiériste de Touraine, en camaïeu de framboise.
+						</p>
+						<div class="flex items-center justify-between">
+							<p class="font-semibold text-bordeaux text-lg">
+								45€
+							</p>
+							<button class=" font-semibold text-base text-framboise">
+								Commander
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="overflow-hidden rounded-xl bg-creme md:w-85">
+					<img src="img/bouquet-champetre.svg" alt="">
+					<div class="p-6">
+						<h3 class="font-titre font-bold text-xl pb-2">
+							Champêtre
+						</h3>
+						<p class="text-sm pb-8">
+							Fleurs des champs, lavande et feuillages, comme une promenade en bord de Loire.
+						</p>
+						<div class="flex items-center justify-between">
+							<p class="font-semibold text-bordeaux text-lg">
+								35€
+							</p>
+							<button class=" font-semibold text-base text-framboise">
+								Commander
+							</button>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+		<section class="flex flex-col bg-petale px-4 py-16 md:px-44 md:py-24">
+			<h3 class="text-center text-3xl  font-titre font-bold font-encre pb-12     md:text-4xl">
+				Pourquoi choisir Fleurs Roussel ?
+			</h3>
+			<div class="flex flex-col gap-10 md:flex-row">
+				<div class="flex flex-col items-center text-center justify-center">
+					<img src="img/icone-saison.svg" alt="" class="size-14 rounded-full bg-blanc p-3 ">
+					<h4 class="font-titre font-bold text-encre text-xl pt-6 pb-2">
+						Des fleurs de saison
+					</h4>
+					<p class="text-base text-encre">
+						Achetées chez des producteurs du Loir-et-Cher et de Touraine.
+					</p>
+				</div>
+				<div class="flex flex-col items-center text-center justify-center">
+					<img src="img/icone-livraison.svg" alt="" class="size-14 rounded-full bg-blanc p-3 ">
+					<h4 class="font-titre font-bold text-encre text-xl pt-6 pb-2">
+						Livrées le jour même
+					</h4>
+					<p class="text-base text-encre">
+						Pour toute commande passée avant midi, dans Blois et ses environs.
+					</p>
+				</div>
+				<div class="flex flex-col items-center text-center justify-center">
+					<img src="img/icone-atelier.svg" alt="" class="size-14 rounded-full bg-blanc p-3 ">
+					<h4 class="font-titre font-bold text-encre text-xl pt-6 pb-2">
+						Composées à la main
+					</h4>
+					<p class="text-base text-encre">
+						Chaque bouquet est unique et emballé dans du papier recyclé.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="bg-sauge px-4 py-16 md:px-44 md:py-24 md:flex  md:flex-row md:flex-row-reverse md:items-center">
+				<figure class="">
+					<img src="img/atelier.svg" alt="" class="rounded-2xl overflow-hidden">
+				</figure>
+				<div class="md:w-131">
+					<h3 class="font-titre font-bold text-3xl text-blanc pb-4 md:text-4xl">
+						Composez votre bouquet en atelier
+					</h3>
+					<p class="text-blanc text-base pb-6">
+						Un samedi par mois, Madame Roussel partage ses gestes de fleuriste. Vous repartez avec votre composition.
+					</p>
+					<div class="flex flex-col text-base gap-2 pb-8 text-blanc">
+						<p>
+							Six participants au maximum
+						</p>
+						<p>
+							Fleurs et matériel fournis
+						</p>
+						<p>
+							45 € par personne
+						</p>
+					</div>
+					<a href="" class="bg-blanc text-sauge font-semibold text-base px-6 py-3 rounded-full" >
+						Réserver une place
+					</a>
+				</div>
+		</section>
+		<footer class="flex flex-col gap-10 bg-encre px-4 py-12  md:px-44 md:py-12 md:flex-row md:gap-10">
+			<div class=" text-creme md:w-84">
+				<h3 class="font-titre font-bold text-2xl pb-2">
+					Fleurs Roussel
+				</h3>
+				<p class=" text-sm">
+					Artisan fleuriste à Blois depuis 1998.
+				</p>
+			</div>
+			<div class="text-sm text-creme md:w-84">
+				<h4 class="font-semibold">
+					Boutique
+				</h4>
+				<p class="">12 rue commerce, 41000 Blois</p>
+				<p>Du mardi au samedi, 9 h 30 à 19h</p>
+				<p>02 54 00 00 00</p>
+			</div>
+			<div class="text-sm text-creme md:w-84">
+				<h4 class="font-semibold">
+					Liens utiles
+				</h4>
+				<p>Livraison</p>
+				<p>Mentions légales</p>
+			</div>
+		</footer>
+		<div class="bg-encre text-blanc border-t-2 p-4">
+			<p class="text-center text-creme font-titre text-xs">
+				© Fleurs Roussel
+			</p>
+		</div>
 	</main>
 </body>
 <script src="js/nav.js"></script>
